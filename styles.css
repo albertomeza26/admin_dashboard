@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-color: gainsboro;
+    background-color: rgba(255, 255, 255);
     grid-row: 1 / span 1;
     grid-column: 2 / span 3;
     display: grid;
@@ -67,20 +67,155 @@
 }
 
 button {
-   background-color: rgb(10, 110, 241);
+   background-color: rgb(100, 93, 215);
    height: 25px;
    width: 100px;
    border-radius: 14.5px;
-   /*border: 1px solid green;*/
+   color: rgb(255, 255, 255);
+   border: none;
+}
+input {
+    width: max(400px);
+    height: 25px;
+    border-radius: 14.5px;
+    border: 1px solid rgb(205, 205, 205)
 }
 .sidebar{
-    background-color: lightseagreen;
+    background-color: rgb(100, 93, 215);
+    display: grid;
+    grid-template: 1fr 3fr 1.5fr / 1fr;
     grid-row: 1 / span 3;
     grid-column: 1 / 1;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 4rem;
+}
+
+.dashboard {
+    grid-row: 1;
+    display: grid;
+    align-self: center;
+    grid-template: 1fr / 1fr 2fr;
+    margin-top: 20px;
+}
+
+.dashboard-icon {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(images/view-dashboard-variant.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right;
+    margin-right: .5rem;
+}
+
+.dashboard-text{
+    font-size: 1.5rem;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.mid-dashboard {
+    grid-row: 2;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr 2fr;
+    align-content: space-between;
+    margin-top: 2rem;
+}
+
+.mid-dashboard > a {
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 1rem;
+    background-size: 25px;
+}
+
+.home-icon {
+    background-image: url(images/home-account.svg);
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.profile-icon{
+    background-image: url(images/profile.svg);
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.messages-icon {
+    background-image: url(images/message.svg);
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.history-icon{
+    background-image: url(images/history.svg);
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.tasks-icon {
+    background-image: url(images/list-box-outline.svg);
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.communities-icon{
+    background-image: url(images/account-group.svg);
+    grid-row: 6;
+    grid-column: 1;
+}
+.mid-dashboard > [class*="text"] {
+    align-self: center;
+}
+
+.bottom-dashboard {
+    grid-row: 3;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ 1fr 2fr;
+    align-content: space-between;
+    margin-top: 2rem;
+}
+
+.bottom-dashboard > a {
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 1rem;
+    background-size: 25px;
+}
+
+.settings-icon{
+    background-image: url(images/cog.svg);
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.support-icon{
+    background-image: url(images/help-box.svg);
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.privacy-icon {
+    background-image: url(images/shield-check.svg);
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.bottom-dashboard > [class*="text"] {
+    align-self: center;
 }
 
 .nav {
-    background-color: gray;
+    background-color: rgb(226, 252, 251);
     grid-row: 2 / span 2;
     grid-column: 2 / span 3;
 }
+
+a:hover {
+    scale: 1.1;
+    transition: .3s;
+}
+
+/*
+#F2FF49 - yellow */

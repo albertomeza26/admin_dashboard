@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<head>
-<title>Admin Dashboard</title>
-<link rel="stylesheet" href="styles.css">
-<script src="java.js" defer></script>
-<head>
-<body>
-<div class="container">
-<div class="header">
-<div class="search-icon"></div>
-<div class="search-bar"><input type="search"></input></div>
-<div class="notification-icon"></div>
-<div class="small-profile-image"></div>
-<div class="small-profile-name">@Albert</div>
-<div class="large-profile-image"></div>
-<div class="large-profile-name">@Albert</div>
-<div class="new-button">
-<button type="submit">New</button>
-</div>
-<div class="upload-button">
-<button type="submit">Upload</button>
-</div>
-<div class="share-button">
-<button type="submit">Share</button>
-</div>
-</div>
-<div class="sidebar">
-<div class="dashboard">
-<a class="dashboard-icon"></a>
-<div class="dashboard-text">Dashboard</div>
-</div>
-<div class="mid-dashboard">
-<a class="home-icon"></a>
-<div class="home-text">Home</div>
-<a class="profile-icon"></a>
-<div class="profile-text">Profile</div>
-<a class="messages-icon"></a>
-<div class="messages-text">Messages</div>
-<a class="history-icon"></a>
-<div class="history-text">History</div>
-<a class="tasks-icon"></a>
-<div class="tasks-text">Tasks</div>
-<a class="communities-icon"></a>
-<div class="communities-text">Communities</div>
-</div>
-<div class="bottom-dashboard">
-<a class="settings-icon"></a>
-<div class="settings-text">Settings</div>
-<a class="support-icon"></a>
-<div class="support-text">Support</div>
-<a class="privacy-icon"></a>
-<div class="privacy-text">Privacy</div>
-</div>
-</div>
-<div class="nav">Nav</div>
-</div>
-</body>
-</html>
+    <meta charset="utf-8">
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="java.js" defer></script>
+        <head>
+            <body>
+                <div class="container">
+                    <div class="header">
+                        <a class="search-icon">
+                            <img src="images/magnify.svg" alt="Search">
+                        </a>
+                        <div class="search-bar">
+                            <input class="find" type="search"
+                                placeholder="Search"></input>
+                    </div>
+                    <a class="notification-icon">
+                        <img src="images/bell-ring-outline.svg"
+                            alt="Notifications">
+                    </a>
+                    <div class="small-profile-image"></div>
+                    <div class="small-profile-name">@Albert</div>
+                    <div class="large-profile-image"></div>
+                    <div class="large-profile-name">@Albert</div>
+                    <div class="new-button">
+                        <button type="submit">New</button>
+                    </div>
+                    <div class="upload-button">
+                        <button type="submit">Upload</button>
+                    </div>
+                    <div class="share-button">
+                        <button type="submit">Share</button>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="dashboard">
+                        <a class="dashboard-icon">
+                            <img src="images/view-dashboard-variant.svg"
+                                alt="Dashboard">
+                        </a>
+                        <a class="dashboard-text">Dashboard</a>
+                    </div>
+                    <div class="mid-dashboard">
+                        <a class="home-icon">
+                            <img src="images/home-account.svg" alt="Home">
+                        </a>
+                        <a class="home-text">Home</a>
+                        <a class="profile-icon">
+                            <img src="images/profile.svg" alt="Profile Icon">
+                        </a>
+                        <a class="profile-text">Profile</a>
+                        <a class="messages-icon">
+                            <img src="images/message.svg" alt="Message">
+                        </a>
+                        <a class="messages-text">Messages</a>
+                        <a class="history-icon">
+                            <img src="images/history.svg" alt="History">
+                        </a>
+                        <a class="history-text">History</a>
+                        <a class="tasks-icon">
+                            <img src="images/list-box-outline.svg" alt="Tasks">
+                        </a>
+                        <a class="tasks-text">Tasks</a>
+                        <a class="communities-icon">
+                            <img src="images/account-group.svg"
+                                alt="Communities">
+                        </a>
+                        <a class="communities-text">Communities</a>
+                    </div>
+                    <div class="bottom-dashboard">
+                        <a class="settings-icon">
+                            <img src="images/cog.svg" alt="Settings">
+                        </a>
+                        <a class="settings-text">Settings</a>
+                        <a class="support-icon">
+                            <img src="images/help-box.svg" alt="Support">
+                        </a>
+                        <a class="support-text">Support</a>
+                        <a class="privacy-icon">
+                            <img src="images/shield-check.svg" alt="Privacy">
+                        </a>
+                        <a class="privacy-text">Privacy</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="projects">Your Projects</div>
+                    <div class="nav-box" id="nav-one"></div>
+                    <div class="nav-box" id="nav-two"></div>
+                    <div class="nav-box" id="nav-three"></div>
+                    <div class="nav-box" id="nav-four"></div>
+                    <div class="nav-box" id="nav-five"></div>
+                    <div class="nav-box" id="nav-six"></div>
+                    <div class="announce-side">
+                        <div class="announcements">Announcements</div>
+                        <div class="nav-trend" id="trend-one"></div>
+                        <div class="trending">Trending</div>
+                        <div class="nav-trend" id="trend-two"></div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
